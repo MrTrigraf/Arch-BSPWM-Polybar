@@ -1,0 +1,64 @@
+#! /bin/sh
+###################################################################
+#  ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗██████╗  ██████╗  #
+#  ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║██╔══██╗██╔════╝  #
+#  ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║██████╔╝██║       #
+#  ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║██╔══██╗██║       #
+#  ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║██║  ██║╚██████╗  #
+#  ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝  #
+###################################################################
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+##~~~~~~~~~~ Автозапуск ~~~~~~~~~~ ##
+
+#изменение раскладки клавиатуры#
+setxkbmap -option grp:alt_shift_toggle us,ru &
+#запуск курсора#
+xsetroot -cursor_name left_ptr
+#горячие клавишы #
+sxhkd &
+#фон#
+nitrogen --restore &
+#polybar#
+$HOME/.config/polybar/launch.sh
+
+##~~~~~~~~~~  Оконные правила ~~~~~~~~~~ ##
+
+#количество рабочих окон#
+bspc monitor -d 1 2 3 4 5  
+#запуск системы на 3 рабочем столе#
+bspc desktop -f ^3
+#игнорирует открытые окна при старте системы#
+bspc config ignore_ewmh_focus true
+#внешние правила#
+bspc config external_rules_command $HOME/.config/bspwm/scripts/external_rules
+#автозапуск приложений#
+$HOME/.config/bspwm/scripts/autostart.sh
+
+
+##~~~~~~~~~~ Общая конфигурация ~~~~~~~~~~ ##
+
+#размер рамки и отступ от краев#
+bspc config border_width        2
+bspc config window_gap          4
+#размер от родительского окна#
+bspc config split_ratio          0.5
+#рамки и отступы на одном экране#
+bspc config borderless_monocle	false
+bspc config gapless_monocle	false
+bspc config single_monocle	true
+bspc config paddingless_monocle	true
+bspc config focus_follows_pointer true
+bspc config pointer_modifier	super
+#цвет рамок в разных состояниях#
+bspc config normal_border_color "#2e3440"
+bspc config active_border_color "#2e3440"
+bspc config focused_border_color "#d8dee9"
+#цвет пространтства при выборе положения нового окна#
+bspc config presel_feedback_color "#595B82"
+
+
+
+
+
