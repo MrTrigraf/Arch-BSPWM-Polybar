@@ -16,11 +16,11 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 setxkbmap -option grp:alt_shift_toggle us,ru &
 #запуск курсора#
 xsetroot -cursor_name left_ptr
-#горячие клавишы #
+#запуск горячих клавиш#
 sxhkd &
-#фон#
+#запуск фона#
 nitrogen --restore &
-#polybar#
+#запуск polybar#
 $HOME/.config/polybar/launch.sh
 
 ##~~~~~~~~~~  Оконные правила ~~~~~~~~~~ ##
