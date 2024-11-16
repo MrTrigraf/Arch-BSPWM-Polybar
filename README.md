@@ -1,5 +1,5 @@
 <h1 align="center"> :evergreen_tree: Hi there, I'm Barmaley :evergreen_tree: </h1>
-<h5 align="center"> install and config arch linux  + baspwm + polybar </h5>
+<h5 align="center"> install and config arch linux  + bspwm + polybar </h5>
 
 <!-- INFORMATION -->
 <h1 align="left"> :computer: system parameters </h1> 
