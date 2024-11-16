@@ -26,9 +26,9 @@
 # :page_with_curl: Table of Contents 
 
 ### Basic installation
-+ [Installing Arch Linux]()
-+ [Installing packages and programs]()
-+ [Basic configuration]()
++ [Installing Arch Linux](https://github.com/MrTrigraf/arch-bspwm-polybar#install-arch-linux)
++ [Installing packages and programs](https://github.com/MrTrigraf/arch-bspwm-polybar#installing-packages-and-programs)
++ [Basic configuration](https://github.com/MrTrigraf/arch-bspwm-polybar#basic-configuration)
 
 <h3 align="center"> install Arch Linux </h3>
 
