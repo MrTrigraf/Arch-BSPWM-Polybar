@@ -97,7 +97,7 @@ cp /usr/share/doc/polybar/examples/config.ini ~/.config/polybar/config
 
 Now you need to make initial changes to the configuration files
 
-Open file sxhkdrc:
+Open file: `sxhkdrc`
 ~~~
 nano ~/.config/sxhkd/sxhkdrc
 ~~~
@@ -110,14 +110,44 @@ super + Return
 
 let's create a boot script for *polybar*
 
-in the polybar directory, create a file with the name: launch.sh
+in the polybar directory, create a file with the name: `launch.sh`
 ~~~
 nano ~/.config/polybar/launch.sh
 ~~~
 
 In this file we write:
 ~~~
+polybar-msg cmd quit
 
+echo "---" | tee -a /tmp/polybar1.log
+polybar mybar 2>&1 | tee -a /tmp/polybar1.log & disown
+
+echo "Bars launched..."
 ~~~
+
+where mybar - is the name of our polybar (it can be anything)
+
+Let's make this file executable
+~~~
+chmod +x ~/.config/polybar/launch.sh
+~~~
+
+open the config.ini file in the polybar directory and changing the name polybara from example to mybar
+
+Let's set up the bspwm
+
+to do this, open the file: `bspwmrc`
+~~~
+nano ~/.config/bspwm/bspwmrc
+~~~
+
+Let's add an autorun rule:
+~~~
+#AutoStart
+sxhkd&
+$HOME/.config/polybar/launch.sh 
+~~~
+
+Polybar must be started last
 
 [Back to the Top](#basic-installation)
