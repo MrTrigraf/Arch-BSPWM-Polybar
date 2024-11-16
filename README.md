@@ -26,19 +26,19 @@
 # :page_with_curl: Table of Contents 
 
 ### Basic installation
-+ [Installing Arch Linux](https://github.com/MrTrigraf/arch-bspwm-polybar#Install-Arch-Linux)
-+ [Installing packages and programs](https://github.com/MrTrigraf/arch-bspwm-polybar#Installing-packages-and-programs)
++ [Installing Arch Linux](#Install-Arch-Linux)
++ [Installing packages and programs](#Installing-packages-and-programs)
 + [Basic configuration](#basic-configurationt)
 
 <h3 align="center"> Install Arch Linux </h3>
 
-<a name="my-custom-anchor-point"></a>
+<a name="Install-Arch-Linux"></a>
 
 [Back to the Top](#basic-installation)
 
 <h3 align="center"> Installing packages and programs </h3>
 
-<a name="my-custom-anchor-point"></a>
+<a name="Installing-packages-and-programs"></a>
 
 Basic Installation Packages: `neofetch, nano, bspwm, sxhkd, kitty, rofi, picom, polybar, lemurs, xorg, xorg-xinit`
 ~~~
