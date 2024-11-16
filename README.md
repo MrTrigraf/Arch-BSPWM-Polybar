@@ -1,8 +1,8 @@
 <h1 align="center"> :evergreen_tree: Hi there, I'm Barmaley :evergreen_tree: </h1>
-<h4 align="center"> install and config arch linux  + baspwm + polybar </h4>
+<h5 align="center"> install and config arch linux  + baspwm + polybar </h5>
 
 <!-- INFORMATION -->
-<h1 align="left"> :page_with_curl: system parameters </h1> 
+<h1 align="left"> :computer: system parameters </h1> 
 
 <!-- добавить показатели системы -->
 <!-- <img src="demonstration/1.png" alt="rice" align="right" width="500px"> -->
@@ -22,3 +22,15 @@
  - Sound driver: [**`PipeWire`**](https://github.com/mikeroyal/PipeWire-Guide#Installing-PipeWire-on-Arch-Linux)
 
 </br>
+
+# :page_with_curl: Table of Contents 
+
+### system installation and initial setup
++ [Installing Arch Linux]()
++ [Installing packages and programs]()
++ [Polybar installation and initial setup]()
+
+<h3 align="center"> install Arch Linux   </h3>
+
+[Back to the Top](#system-installation-and-initial-setup)
+
