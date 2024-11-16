@@ -27,8 +27,8 @@
 
 ### Basic installation
 + [Installing Arch Linux](https://github.com/MrTrigraf/arch-bspwm-polybar#Install-Arch-Linux)
-+ [Installing packages and programs](#Installing-packages-and-programs)
-+ [Basic configuration](#Basic-configuration)
++ [Installing packages and programs](https://github.com/MrTrigraf/arch-bspwm-polybar#Installing-packages-and-programs)
++ [Basic configuration](https://github.com/MrTrigraf/arch-bspwm-polybar#Basic-configuration)
 
 <h3 align="center"> Install Arch Linux </h3>
 
