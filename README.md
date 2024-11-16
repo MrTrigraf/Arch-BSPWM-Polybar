@@ -28,13 +28,17 @@
 ### Basic installation
 + [Installing Arch Linux](https://github.com/MrTrigraf/arch-bspwm-polybar#Install-Arch-Linux)
 + [Installing packages and programs](https://github.com/MrTrigraf/arch-bspwm-polybar#Installing-packages-and-programs)
-+ [Basic configuration](https://github.com/MrTrigraf/arch-bspwm-polybar#Basic-configuration)
++ [Basic configuration](#basic-configurationt)
 
 <h3 align="center"> Install Arch Linux </h3>
+
+<a name="my-custom-anchor-point"></a>
 
 [Back to the Top](#basic-installation)
 
 <h3 align="center"> Installing packages and programs </h3>
+
+<a name="my-custom-anchor-point"></a>
 
 Basic Installation Packages: `neofetch, nano, bspwm, sxhkd, kitty, rofi, picom, polybar, lemurs, xorg, xorg-xinit`
 ~~~
@@ -60,7 +64,8 @@ next the system must be restarted
 
 <h3 align="center"> Basic configuration </h3>
 
+<a name="basic-configurationt"></a>
+
 
 
 [Back to the Top](#basic-installation)
-
