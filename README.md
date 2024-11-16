@@ -25,12 +25,12 @@
 
 # :page_with_curl: Table of Contents 
 
-### system installation and initial setup
+### installation and configuration of the system
 + [Installing Arch Linux]()
 + [Installing packages and programs]()
-+ [Polybar installation and initial setup]()
++ [Basic configuration]()
 
 <h3 align="center"> install Arch Linux   </h3>
 
-[Back to the Top](#system-installation-and-initial-setup)
+[Back to the Top](#installation-and-configuration-of-the-system)
 
