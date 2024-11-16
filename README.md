@@ -25,12 +25,42 @@
 
 # :page_with_curl: Table of Contents 
 
-### installation and configuration of the system
+### Basic installation
 + [Installing Arch Linux]()
 + [Installing packages and programs]()
 + [Basic configuration]()
 
-<h3 align="center"> install Arch Linux   </h3>
+<h3 align="center"> install Arch Linux </h3>
 
-[Back to the Top](#installation-and-configuration-of-the-system)
+[Back to the Top](#basic-installation)
+
+<h3 align="center"> Installing packages and programs </h3>
+
+Basic Installation Packages: `neofetch, nano, bspwm, sxhkd, kitty, rofi, picom, polybar, lemurs, xorg, xorg-xinit`
+~~~
+sudo pacman -S neofetch nano
+~~~
+~~~
+sudo pacman -S bspwm sxhkd kitty rofi picom polybar lemurs
+~~~
+
+Xorg:
+~~~
+sudo pacman -S xorg xorg-xinit
+~~~
+
+Since the fonts are not installed, they need to be installed:
+~~~
+sudo pacman -S gnu-free-fonts
+~~~
+
+next the system must be restarted
+
+[Back to the Top](#basic-installation)
+
+<h3 align="center"> Basic configuration </h3>
+
+
+
+[Back to the Top](#basic-installation)
 
