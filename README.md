@@ -25,7 +25,7 @@
 
 <a name="Table-of-Contents"></a>
 
-# :page_with_curl: Table of Contents 
+# :books: Table of Contents 
 
 + [Gallery](#)
 + [Basic installation](#Basic-installation)
@@ -43,7 +43,7 @@
 
 <h3 align="center"> Install Arch Linux </h3>
 
-[Back to the Top](#Table-of-Contents)
+[:arrow_up: Back to the Top](#Table-of-Contents)
 
 <a name="Installing-packages-and-programs"></a>
 
@@ -69,7 +69,7 @@ sudo pacman -S gnu-free-fonts
 
 next the system must be restarted
 
-[Back to the Top](#Table-of-Contents)
+[:arrow_up: Back to the Top](#Table-of-Contents)
 
 <a name="basic-configurationt"></a>
 
@@ -159,4 +159,4 @@ $HOME/.config/polybar/launch.sh
 
 Polybar must be started last
 
-[Back to the Top](#Table-of-Contents)
+[:arrow_up: Back to the Top](#Table-of-Contents)
