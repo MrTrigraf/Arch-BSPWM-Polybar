@@ -1,5 +1,5 @@
 <h1 align="center"> :evergreen_tree: Hi there, I'm Barmaley :evergreen_tree: </h1>
-<h5 align="center"> install and config arch linux  + bspwm + polybar </h5>
+<h4 align="center"> install and config arch linux  + bspwm + polybar </h4>
 
 <!-- INFORMATION -->
 <h1 align="left"> :computer: system parameters </h1> 
@@ -23,22 +23,31 @@
 
 </br>
 
+<a name="Table-of-Contents"></a>
+
 # :page_with_curl: Table of Contents 
 
-### Basic installation
-+ [Installing Arch Linux](#Install-Arch-Linux)
-+ [Installing packages and programs](#Installing-packages-and-programs)
-+ [Basic configuration](#basic-configurationt)
++ [Gallery](#)
++ [Basic installation](#Basic-installation)
+  + [Installing Arch Linux](#Install-Arch-Linux)
+  + [Installing packages and programs](#Installing-packages-and-programs)
+  + [Basic configuration](#basic-configurationt)
++ [basic system settings](#)
++ [HotKeys](#) 
 
-<h3 align="center"> Install Arch Linux </h3>
+<a name="Basic-installation"></a>
+
+<h2 align="center"> :closed_book: Basic installation </h2>
 
 <a name="Install-Arch-Linux"></a>
 
-[Back to the Top](#basic-installation)
+<h3 align="center"> Install Arch Linux </h3>
 
-<h3 align="center"> Installing packages and programs </h3>
+[Back to the Top](#Table-of-Contents)
 
 <a name="Installing-packages-and-programs"></a>
+
+<h3 align="center"> Installing packages and programs </h3>
 
 Basic Installation Packages: `neofetch, nano, bspwm, sxhkd, kitty, rofi, picom, polybar, lemurs, xorg, xorg-xinit`
 ~~~
@@ -60,11 +69,11 @@ sudo pacman -S gnu-free-fonts
 
 next the system must be restarted
 
-[Back to the Top](#basic-installation)
-
-<h3 align="center"> Basic configuration </h3>
+[Back to the Top](#Table-of-Contents)
 
 <a name="basic-configurationt"></a>
+
+<h3 align="center"> Basic configuration </h3>
 
 The "~" symbol in the path of the file\directory means /home/{user} (home directory)
 
@@ -150,4 +159,4 @@ $HOME/.config/polybar/launch.sh
 
 Polybar must be started last
 
-[Back to the Top](#basic-installation)
+[Back to the Top](#Table-of-Contents)
