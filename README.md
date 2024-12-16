@@ -141,7 +141,7 @@ Let's make this file executable
 chmod +x ~/.config/polybar/launch.sh
 ~~~
 
-open the config.ini file in the polybar directory and changing the name polybara from example to mybar
+open the `config.ini` file in the polybar directory and changing the name polybara from example to mybar
 
 Let's set up the bspwm
 
@@ -158,5 +158,57 @@ $HOME/.config/polybar/launch.sh
 ~~~
 
 Polybar must be started last
+
+Moving on to the setup Xinitrc
+Copy the config file to the home directory:
+~~~
+cp /etc/X11/xinit/xinitrc ~/.xinitrc
+~~~
+Next, you need to open and edit the `.xinitrc` file
+
+We delete everything after the line "fi" at the end of the file. In my case, this is:
+~~~
+# twm &
+# xclock -geometry 50x50-1+1 &
+# xterm -geometry 80x50+494_51 &
+# xterm -geometry 80x20+494-0 &
+# exec xterm -geometry 80x66+0+0 -name login
+~~~
+
+Adding the following command:
+~~~
+exec bspwm 
+~~~
+
+After changing the configuration of xinitrc, you can try to run the environment using:
+~~~
+startx
+~~~
+
+Now we need to install the lemurs package: 
+~~~
+sudo pacman -S lemurs
+
+# Not needed if you don't have a window manager yet
+sudo systemctl disable display-manager.service
+
+sudo systemctl enable lemurs.service
+~~~
+
+Let's create a startup script for `bspwm`
+~~~
+nano /etc/lemurs/wms/bspwm
+~~~
+We prescribe in it:
+~~~
+#! /bin/sh
+sxhkd &
+exec bspwm
+~~~
+Do not forget to make this file executable!
+~~~
+sudo chmod +x /etc/lemurs/wms/bspwm
+~~~
+At this point, the basic installation is complete
 
 [:arrow_up: Back to the Top](#Table-of-Contents)
